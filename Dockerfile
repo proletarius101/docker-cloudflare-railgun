@@ -1,10 +1,10 @@
-FROM ubuntu:16.04
+FROM ubuntu:latest
 # cloudflare-railgun 5.0.2
 # docker run --name railgun-memcached -d --restart=always memcached
 # docker run -d --restart=always --name railgun -p 2408:2408 --link railgun-memcached:memcached -e RG_ACT_TOKEN= -e RG_ACT_HOST= -e RG_LOG_LEVEL=1 rungeict/cloudflare-railgun
 
 
-MAINTAINER Matthew McKenzie <matthew.mckenzie@rungeict.com>
+MAINTAINER proletarius101 <proletarius101@protonmail.com>
 
 ENV RG_WAN_PORT 2408
 ENV RG_LOG_LEVEL 0
